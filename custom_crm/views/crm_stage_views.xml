@@ -1,0 +1,12 @@
+<odoo>
+    <record id="view_crm_stage_custom_form" model="ir.ui.view">
+        <field name="name">crm.stage.custom.form</field>
+        <field name="model">crm.stage</field>
+        <field name="inherit_id" ref="crm.crm_case_stage_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group" position="inside">
+                <field name="custom_field"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
